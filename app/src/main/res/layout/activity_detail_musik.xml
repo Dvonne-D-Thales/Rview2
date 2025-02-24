@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detailAlbumCover"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/detailJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul Lagu"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/detailArtis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Artis"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/detailPembuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pembuat"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Tambahkan Lirik -->
+        <TextView
+            android:id="@+id/detailLirik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lirik lagu akan ditampilkan di sini..."
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
